@@ -1,0 +1,37 @@
+name: "cds"
+integration_steps: 100
+save_diagnostics: true
+params:
+  time_schedule:
+    type: "geometric"
+    min_val: 0.0001
+    max_val: 1.0
+    p: 1.0
+  noise_schedule:
+    base_noise_var: 0.01
+    type: "constant"
+    symmetric: false
+  corrector_mode: "mala"
+  corrector_steps: 1
+  corrector_adaptation_rate: 0.01
+  corrector_target_acceptance: null
+  corrector_step_size: 0.1
+  corrector_leapfrog_steps: 1
+  jump_steps: 5000
+  jump_ref_std: 1.0
+  jump_beta_schedule:
+    type: "geometric"
+    min_val: 0.01
+    max_val: 1.0
+    n_replicas: 5
+    p: 1.0
+  jump_step_mode: "mala"
+  jump_swap_mode: "nrpt"
+  jump_swap_every: 1
+  jump_leapfrog_steps: 5
+  jump_adaptation_rate: 0.05
+  jump_target_acceptance: null
+  verbose: true
+  compile: true
+
+tags: ["cds"]

@@ -1,0 +1,16 @@
+name: "aldp_implicit_omm"
+init_samples_path: "/home/fran/work_fran/sampling/experiments/data/aldp_vacuum_minenergy.pt"
+n_samples_gt: 1000000
+n_samples_gen: 1000000
+params:
+  data_path: "/home/fran/work_fran/sampling/experiments/data/aldp_implicit_cartesian_test.pt"
+  temperature: 300.0
+  regularize_energy: false
+  check_chirality: true
+  energy_cut: 1e8
+  energy_max: 1e20
+  env: "implicit"
+  platform_name: "CUDA"
+plot:
+  bins: 100
+  vmin: 0.001

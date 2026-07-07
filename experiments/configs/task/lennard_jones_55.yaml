@@ -1,0 +1,16 @@
+name: "lennard_jones_55"
+n_samples_gt: 10000
+n_samples_gen: 10000
+init_samples_path: "/home/fran/work_fran/sampling/experiments/data/lennard_jones_55_minenergy.pt"
+params:
+  n_particles: 55
+  eps: 1.0
+  rm: 1.0
+  oscillator: true
+  oscillator_scale: 1.0
+  energy_factor: 1.0
+  interpolate: true
+  interp_min: 0.65
+  interp_max: 2.0
+  n_interp_points: 1000
+  data_path: "/home/fran/work_fran/sampling/experiments/data/all_data_LJ55-1000-part1.npy"

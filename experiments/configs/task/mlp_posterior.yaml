@@ -1,0 +1,10 @@
+name: "mlp_posterior"
+n_samples_gt: 5000
+n_samples_gen: 5000
+init_samples_path: "/home/fran/work_fran/sampling/experiments/data/mlp_posterior_sample_prior.pt"
+params:
+  n_data: 500
+  d_in: 20
+  d_hidden: 25
+  prior_std: 1.0
+  likelihood_std: 0.1

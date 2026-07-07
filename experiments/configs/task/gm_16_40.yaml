@@ -1,0 +1,10 @@
+name: "gm_16_40"
+n_samples_gt: 10000
+n_samples_gen: 10000
+init_samples_path: "/home/fran/work_fran/sampling/experiments/data/gm_16_40_minenergy.pt"
+params:
+  scale: 40.0
+  dim: 16
+  log_var_scaling: 1.0
+  n_mixes: 40
+  seed: 0

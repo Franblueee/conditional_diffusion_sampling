@@ -1,0 +1,17 @@
+hydra:
+  run:
+    dir: /home/fran/work_fran/conditional_diffusion_sampling/experiments/hydra_outputs/debug/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+seed: 0
+tags: []
+
+n_chunks: None # Number of chunks to split samples generation into. Useful for large sample sizes that don't fit in memory.
+
+evaluate_samples: true
+save_samples: false
+
+defaults:
+  - _self_
+  - sampler: mala
+  - task: gm_2_40
+  - logger: wandb

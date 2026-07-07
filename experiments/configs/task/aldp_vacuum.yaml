@@ -1,0 +1,14 @@
+name: "aldp_vacuum"
+init_samples_path: "/home/fran/work_fran/sampling/experiments/data/aldp_vacuum_minenergy.pt"
+n_samples_gen: 100000
+n_samples_gt: 1000000
+params:
+  data_path: "/home/fran/work_fran/sampling/experiments/data/aldp_vacuum_cartesian.pt"
+  temperature: 300.0
+  regularize_energy: false
+  check_chirality: true
+  energy_cut: 1e8
+  energy_max: 1e20
+plot:
+  bins: 100
+  vmin: 0.001

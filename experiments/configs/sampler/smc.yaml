@@ -1,0 +1,22 @@
+name: "smc"
+n_steps: 5000
+save_diagnostics: true
+params:
+  n_particles: 100
+  resampling_method: "systematic"
+  resampling_threshold: 0.0
+  beta_schedule:
+    type: "geometric"
+    min_val: 0.1
+    max_val: 1.0
+    p: 1.0
+    optimize: false
+  kernel:
+    name: "mala"
+    n_leapfrog_steps: 5
+  step_size: 0.5
+  adaptation_rate: 0.05
+  verbose: true
+  compile: true
+
+tags: ["smc"]

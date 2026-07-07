@@ -1,0 +1,15 @@
+name: "gmnu_2_40"
+n_samples_gt: 10000
+n_samples_gen: 10000
+init_samples_path: "/home/fran/work_fran/sampling/experiments/data/gmnu_2_40_minenergy.pt"
+params:
+  scale: 40.0
+  dim: 2
+  log_var_scaling: 1.0
+  n_mixes: 40
+  seed: 0
+  perc_big_mixes: 0.15
+  weight_big_mixes: 20.0
+plot:
+  bins: 200
+  contour_levels: 50

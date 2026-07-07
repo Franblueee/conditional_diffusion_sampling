@@ -1,0 +1,26 @@
+name: "pt"
+n_steps: 5000
+save_diagnostics: true
+params:
+  reference:
+    type: "inf_uniform"
+    std: 1.0
+  beta_schedule:
+    type: "geometric"
+    min_val: 0.001
+    max_val: 1.0
+    p: 1.0
+    n_replicas: 5
+    optimize: false
+  kernel:
+    name: "mala"
+    n_leapfrog_steps: 0
+  step_size: 0.1
+  swap_mode: "nrpt"
+  swap_every: 1
+  adaptation_rate: 0.05
+  target_acceptance: null
+  verbose: true
+  compile: true
+
+tags: ["pt"]
